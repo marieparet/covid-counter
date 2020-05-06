@@ -1,7 +1,6 @@
-require 'sinatra'
 require_relative 'covid_counter'
+require 'sinatra'
 
 get '/' do
-  "<center><h1>#{CovidCounter.total_deaths}</h1></center>"
+  erb :index
 end
-

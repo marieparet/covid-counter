@@ -1,4 +1,5 @@
 require 'rake/testtask'
+require_relative 'app/server'
 
 Rake::TestTask.new do |t|
   t.libs << 'test'
@@ -7,7 +8,3 @@ end
 
 desc 'Run tests'
 task default: :test
-
-desc 'Start'
-task :start do
-end
