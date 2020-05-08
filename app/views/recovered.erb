@@ -7,13 +7,12 @@
 
 <body>
   <header>
-    <a href="#footer">Aller en bas</a>
     <h1>Covid cases</h1>
-    <h2>Total <em>deaths</em> from Covid 19 :</h2>
+    <h2>Total <em>recovered</em> cases from Covid 19 :</h2>
 
-    <!-- Nombre de morts actualisés en fonction de l'api -->
+    <!-- Nombre de guérisons actualisé en fonction de l'api -->
     <h3>
-      <%= CovidCounter.total_deaths %>
+      <%= CovidCounter.total_recovered %>
     </h3>
       <p>from January 10th to today in below countries :</p>
       <ul>
@@ -22,10 +21,10 @@
         <li>World</li>
       </ul>
 
-      <p><a href="recovered">Page 2 -></a></p>
+      <p><a href="/"><- Page 1</a></p>
     </header>
   
-  <footer id="footer">
+  <footer>
     <p>Data found on <a href="https://api.covid19api.com/world/total">Covid 19 Api</a></p>
     <p>Take care !</p>
   </footer>
